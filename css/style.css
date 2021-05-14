@@ -1,0 +1,1368 @@
+body {
+	margin: 0;
+	overflow-y: hidden;
+}
+
+h1, h3 {
+	margin: 0;
+}
+
+
+section {
+	width: 100vw;
+	height: 100vh;
+}
+
+#map-container {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/map.png);
+	background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mission-car {
+	width: 5vw;
+    height: 5vw;
+    background-color: yellow;
+    background-image: url(../img/cop.gif);
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    -webkit-transition: 4s linear;
+	-moz-transition: 4s linear;
+	-o-transition: 4s linear;
+	transition: transform 1s linear;
+	-webkit-transform: translate(10px, 10px),
+	-moz-transform: translate(10px, 10px),
+	-ms-transform: translate(10px, 10px),
+	-o-transform: translate(10px, 10px),
+	 transform: translate(10px, 10px)
+	/*-webkit-transform: translate(0vw, 0vw),
+	-moz-transform: translate(0vw, 0vw),
+	-ms-transform: translate(0vw, 0vw),
+	-o-transform: translate(0vw, 0vw),
+	 transform: translate(0vw, 0vw);*/
+
+}
+
+.cop-car {
+	background-color: green;
+	width: 5vw;
+  height: 5vw;
+  background-image: url(../img/cop.gif);
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  -webkit-transition: 4s linear;
+	-moz-transition: 4s linear;
+	-o-transition: 4s linear;
+	transition: transform 1s linear;
+	-webkit-transform: translate(10px, 10px),
+	-moz-transform: translate(10px, 10px),
+	-ms-transform: translate(10px, 10px),
+	-o-transform: translate(10px, 10px),
+	 transform: translate(10px, 10px)
+	/*-webkit-transform: translate(0vw, 0vw),
+	-moz-transform: translate(0vw, 0vw),
+	-ms-transform: translate(0vw, 0vw),
+	-o-transform: translate(0vw, 0vw),
+	 transform: translate(0vw, 0vw);*/
+
+
+}
+
+.translate-1 {
+	 transform: translate(500px, 500px) !important;
+}
+
+.translate-2 {
+	 transform: translate(1000px, 1000px) !important;
+}
+
+#test2 {
+	width: 10vw;
+    height: 10vw;
+    background-image: url(../img/cop.gif);
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20vw;
+    left: 15vw;
+    background-size: contain;
+    -webkit-transition: 4s linear;
+	-moz-transition: 4s linear;
+	-o-transition: 4s linear;
+	transition: transform 1s linear;
+	-webkit-transform: translate(10px, 10px),
+	-moz-transform: translate(10px, 10px),
+	-ms-transform: translate(10px, 10px),
+	-o-transform: translate(10px, 10px),
+	 transform: translate(10px, 10px)
+	/*-webkit-transform: translate(0vw, 0vw),
+	-moz-transform: translate(0vw, 0vw),
+	-ms-transform: translate(0vw, 0vw),
+	-o-transform: translate(0vw, 0vw),
+	 transform: translate(0vw, 0vw);*/
+}
+
+.point {
+	width: 5vw;
+	height: 5vw;
+	position: absolute;
+	z-index: 111;
+
+	/*background-color: cadetblue;*/
+}
+
+#spawn {
+	top: 55vh;
+    left: 24vw;
+}
+
+#copSpawn {
+    top: 17vh;
+    left: 11vw;
+}
+
+#cop-spawn-exit {
+	top: 20.5vh;
+	left: 7.5vw;
+}
+
+#point-1 {
+    top: 59.5vh;
+    left: 35vw;
+}
+
+#point-2 {
+	top: 34.5vh;
+    left: 53.5vw;
+}
+
+#point-3 {
+    top: 44vh;
+    left: 94.5vw;
+}
+
+
+#point-4 {
+    top: 36vh;
+    left: 94vw;
+}
+
+#point-5 {
+	top: 29vh;
+    left: 33vw;
+}
+
+#point-6 {
+    top: 19vh;
+    left: 40vw;
+}
+
+#point-7 {
+    top: 48vh;
+    left: 6vw;
+}
+
+#point-8 {
+    top: 16vh;
+    left: 42.5vw;
+}
+
+#point-9 {
+    top: 13.5vh;
+    left: 26.5vw;
+}
+
+#point-10 {
+    top: 24vh;
+    left: 18.5vw;
+}
+
+#point-11 {
+    top: 46vh;
+    left: 1vw;
+}
+
+#point-12 {
+	top: 44.5vh;
+    left: 45vw;
+}
+
+#point-13 {
+	top: 47vh;
+    left: 56vw;
+}
+
+#point-14 {
+	top: 20vh;
+	left: 60vw;
+}
+
+#point-15 {
+	top: 54vh;
+    left: 80vw;
+}
+
+#point-16 {
+	top: 39vh;
+    left: 29vw;
+}
+
+#point-17 {
+	top: 41vh;
+    left: 84vw;
+}
+
+#point-18 {
+	top: 23vh;
+	left: 85vw;
+}
+
+.building {
+	position: absolute;
+    z-index: 10;
+}
+
+#oil {
+	display: none /* <---  delete this   !!! */
+	width: 10vw;
+    height: 10vw;
+    left: 41vw;
+    top: 47vh;
+	background-image: url(../img/oil.gif);
+	background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#oil:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#build {
+	/*width: 25vw;
+    height: 25vw;
+    left: 21vw;
+    top: 38vh;*/
+        width: 17vw;
+    height: 17vw;
+    left: 30.6vw;
+    top: 35.7vh;
+	background-image: url(../img/build.png);
+	background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#wall {
+	width: 25vw;
+    height: 25vw;
+    left: 11vw;
+    top: 18vh;
+	background-image: url(../img/wall.png);
+	background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#shadow {
+	/*-webkit-box-shadow: 10px 10px 65px 21px rgba(245,0,208,0.9);
+    -moz-box-shadow: 10px 10px 65px 21px rgba(245,0,208,0.9);
+    box-shadow: 10px 10px 65px 21px rgba(245,0,208,0.9);
+*/    -webkit-box-shadow: 10px 10px 300px 200px rgba(245,0,208,0.9);
+    -moz-box-shadow: 10px 10px 300px 200px rgba(245,0,208,0.9);
+    box-shadow: 10px 10px 300px 200px rgba(245,0,208,0.6);
+    border-radius: 15vw;
+        width: 13vw;
+    height: 13vw;
+    left: 33vw;
+    top: 41vh;
+     z-index: 9;
+}
+
+#shadow2 {
+	/*-webkit-box-shadow: 10px 10px 65px 21px rgba(245,0,208,0.9);
+    -moz-box-shadow: 10px 10px 65px 21px rgba(245,0,208,0.9);
+    box-shadow: 10px 10px 65px 21px rgba(245,0,208,0.9);
+*/    -webkit-box-shadow: 10px 10px 300px 200px rgba(0,189,245,0.9);
+    -moz-box-shadow: 10px 10px 300px 200px rgba(0,189,245,0.9);
+    box-shadow: 10px 10px 300px 200px rgba(0,189,245,0.6);
+    border-radius: 15vw;
+    width: 18vw;
+    height: 18vw;
+    left: 75vw;
+    top: 42vh;
+     z-index: 9;
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	z-index: 112;
+}
+
+#building-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+}
+
+#inform-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+}
+
+#mission-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+}
+
+#menu-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+	background-color: grey;
+}
+
+#menu-modal-conrainer {
+	width:100%;
+	height:100%;
+}
+
+.menu-btn {
+	width: 80%;
+	height: 15%;
+	margin: 4% auto 0;
+	background-color: purple;
+	text-align: center;
+}
+
+.menu-btn-text {
+  color: white;
+  margin-top: 2vh;
+	display: inline-block;
+}
+
+.menu-btn:hover {
+	cursor: pointer;
+	background-color: #9e059e;
+}
+
+.title {
+	text-transform: uppercase;
+}
+
+.mission-modal-start {
+	top:15vh;
+	left: 5vw;
+    width: 90vw;
+	height:60vh;
+}
+
+.mission-modal-manual {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+}
+
+.mission-modal-one-action {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+}
+
+.mission-modal-result {
+	top: 15vh;
+    left: 30vw;
+    width: 40vw;
+    height: 70vh;
+}
+
+/*#self-based-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+}
+
+#cops-arest-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+}
+*/
+
+.mission-modal-end {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+}
+
+.mission-modal-reinforcement {
+	top:15vh;
+	left: 20vw;
+	width:60vw;
+	height:70vh;
+}
+
+.existed-comrads-container, .new-comrads-container {
+    width: 100%;
+    height: 30%;
+}
+
+.existed-comrads-list, .reinforcement-comrades-list {
+	height: 80%;
+	list-style: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.existed-comrade {
+    width: 15%;
+    height: 90%;
+    margin: auto;
+    background-color: #cccccc;
+    cursor: pointer;
+    background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modals-reinforcement-text-block {
+	width: 100%;
+	padding: 5% 0;
+}
+
+.block-info-template {
+	display: none;
+}
+
+.template {
+	display: none !important;
+}
+
+.block-info {
+	width:35%;
+	height: 35%;
+	margin-left:10%;
+    margin-top: 10%;
+	background-color: blue;
+    position: inherit;
+    display: inline-block;
+}
+
+.block-info:hover {
+	opacity: 0.8;
+    cursor: pointer;
+}
+
+.choose-story-item {
+	width:35%;
+	height: 35%;
+	margin-left:10%;
+    margin-top: 10%;
+	background-color: blue;
+    position: inherit;
+    display: inline-block;
+}
+
+.choose-story-item:hover {
+	opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-info-wrap {
+	width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+}
+
+.mission-flag {
+	position: absolute;
+    z-index: 11;
+    width:10vw;
+	height:10vh;
+	cursor: pointer;
+	display: none;
+}
+
+.flag-default {
+	background-color: rgba(0,189,245,0.6);
+}
+
+.flag-default:hover {
+	background-color: rgb(1 164 212);
+}
+
+.flag-citizen {
+	background-color: #27a7a099;
+}
+
+.flag-citizen:hover {
+	background-color: #27a7a0;
+}
+
+.mission-accepted {
+	background-color: #ff6a00;
+}
+
+#calls {
+    width:15vw;
+	top: 0;
+	left: 0;
+}
+
+#calls-container {
+	list-style: none;
+	padding: 0;
+}
+
+#calls-title {
+	height: 5vh;
+	text-align: right;
+	background-color: orange;
+}
+
+#calls-title>h1 {
+	display: inline-block;
+    text-transform: uppercase;
+}
+
+.call {
+	display: none;
+    line-height: 4vh;
+	width: 90%;
+    height: 4vh;
+    margin-top: 1vh;
+    margin-left: 10%;
+    background-color: #92652e;
+}
+
+.call:hover {
+    background-color: #a5773f;
+    cursor: pointer;
+}
+
+.call-wrap {
+	justify-content: space-around;
+    display: flex;
+}
+
+.call-mission-countdown {
+	font-style: italic;
+    font-weight: 600;
+    color: #ffffffb5;
+    font-size: 2.5vh;
+}
+
+#messages {
+    width:15vw;
+	top: 0;
+	right: 0;
+}
+
+#messages-container {
+    list-style: none;
+    padding: 0;
+}
+
+#messages-title {
+	height: 5vh;
+	text-align: left;
+	background-color: brown;
+}
+
+#messages-title>h1 {
+	display: inline-block;
+    text-transform: uppercase;
+}
+
+.message {
+	display: none;
+	width: 90%;
+    height: 4vh;
+    margin-top: 1vh;
+    margin-right: 10%;
+    background-color: aliceblue;
+}
+
+.message:hover {
+    background-color: #d8e0e6;
+    cursor: pointer;
+}
+
+.message-text-block {
+	text-align: center;
+    line-height: 4vh;
+}
+
+.qms-description-block {
+	width: 100%;
+	height: 60%;
+	background-color: red;
+	display: flex;
+}
+
+.qms-dscr-bl-image {
+	width: 60%;
+	height: 100%;
+	background-color: red;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*.m1-image {
+	background-image: url(../img/dick.png);
+}
+
+.m2-image {
+	background-image: url(../img/tits.gif);
+}*/
+
+.qms-dscr-bl-text-area {
+	width: 40%;
+	height: 100%;
+}
+
+.qmsdbta-content {
+	width: 80%;
+	margin: 20% auto;
+	color: white;
+}
+
+.qms-squad-block {
+	width: 100%;
+	height: 30%;
+	display: flex;
+}
+
+.qmssb-common-team-container {
+	width: 75%;
+	height: 100%;
+}
+
+.qmssb-bdsm-team-container {
+	width: 25%;
+	height: 100%;
+}
+
+.modal-common-comrade-list {
+	width: 90%;
+	height: 100%;
+	list-style: none;
+	display: flex;
+	margin: auto;
+	padding: 0;
+}
+
+.modal-common-comrade-field {
+	width: 15%;
+	height: 90%;
+	margin: auto;
+	background-color: #cccccc;
+	cursor: pointer;
+	background-position: center;
+  background-attachment: scroll;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.qmssb-bdsm-team-list {
+	width: 90%;
+	height: 100%;
+	list-style: none;
+	display: flex;
+	margin: auto;
+	padding: 0;
+}
+
+.qmssb-bdsm-team-list-item {
+	width: 45%;
+	height: 90%;
+	margin: auto;
+	background-color: #999999;
+	cursor: pointer;
+}
+
+.modal-empty-comrade-list-close-btn {
+	height: 10%;
+	width: 100%;
+	background-color: blue;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+.modal-mission-btns {
+	height: 10%;
+	width: 100%;
+	display: none;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	display: flex;
+}
+
+.modal-mission-btns>button {
+	cursor: pointer;
+}
+
+.modal-comrade-list-accept-btn {
+	height: 100%;
+	width: 50%;
+	background-color: blue;
+}
+
+.modal-comrade-list-close-btn {
+	height: 100%;
+	width: 50%;
+	background-color: red;
+}
+
+.active-comrade {
+	/* background-color: darkblue; */
+	opacity: 1;
+}
+
+.qmssbbtli-active {
+	background-color: purple;
+	opacity: 1;
+}
+
+.notDisplay {
+	display: none
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.choose-story-title {
+	text-align: center;
+    padding-top: 5%;
+}
+
+.choose-story-container {
+	height: 100%;
+    width: 100%;
+}
+
+.choose-story-intro {
+	height: 80%;
+    width: 100%;
+}
+
+.choose-story-block {
+	height: 80%;
+    width: 100%;
+}
+
+.mission-flag-countdown {
+	font-size: 10vh;
+    line-height: 10vh;
+    margin: 0;
+    text-align: center;
+    color: #82005a;
+    font-style: oblique;
+
+}
+
+.close-btn {
+	cursor: pointer;
+}
+
+.mission-flag-countdown:hover {
+	color: #b5157ef2;
+
+}
+
+#team {
+	bottom: 0;
+	height: 20vh;
+    width: 45vw;
+    background-color: yellow;
+}
+
+.team-hidden {
+	bottom: -17vh;
+}
+
+#team-title-block {
+	height: 3vh;
+    width: 100%;
+    background-color: chocolate;
+
+		display: flex;
+/* flex-flow: column wrap; */
+justify-content: space-between;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+#team-title-text-wrap {
+	height: 100%;
+}
+
+#team-title-text {
+	line-height: 100%;
+    height: 100%;
+    margin-left: 3%;
+}
+
+#team-container {
+	list-style: none;
+    padding: 0;
+    display: flex;
+    height: 15vh;
+    margin: 1vh;
+    background-color: coral;
+}
+
+.involved-comrades-container {
+	list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  margin: 1vh;
+  background-color: coral;
+}
+
+.comrade {
+    max-width: 10vw;
+    width: 14%;
+    background-color: #99dede;
+    text-align: center;
+    margin-right: 1vw;
+}
+
+.involved-comrade {
+	width: 30%;
+}
+
+.comrade-title {
+    height: 10%;
+    line-height: 100%;
+	background-color: #f0ffffd6;
+}
+
+.comrade-power-counter {
+    height: 10%;
+    line-height: 100%;
+	background-color: #f0ffff94;
+}
+
+.comrade-image {
+	cursor: pointer;
+    height: 100%;
+    width: 90%;
+	background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#team-container .comrade-image {
+	opacity: 0.8;
+}
+
+#team-container .comrade-image:hover {
+	opacity: 1;
+}
+
+#team-container .comrade-image-used {
+	opacity: 0.4;
+}
+
+.comrade-image-extra-action {
+	width: 100%;
+  height: 100%;
+	background-position: center;
+  background-attachment: scroll;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.comrade-image-died {
+	background-image: url(../img/comrade-died.png);
+}
+
+.comrade-image-cops {
+	background-image: url(../img/handcuff.png);
+}
+
+.comrade-modal-bio {
+	top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: 40vh;
+}
+
+.comrade-modal-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+.comrade-modal-content-block{
+	width: 50%;
+	height: 100%;
+}
+
+.comrade-modal-image {
+	height: 100%;
+	background-image: url(../img/comrade.png);
+	background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#team-hide-arrow {
+	line-height: 100%;
+  height: 100%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.bottom {
+	transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+}
+
+.comrade-energy-storage {
+	padding: 0;
+	margin: 0 0 0 2%;
+	width: 8%;
+	height: 100%;
+	list-style: none;
+	background-color: grey;
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.comrade-energy-unit {
+	width: 100%;
+	height: 18%;
+	margin: 0;
+	background-color: #005020;
+}
+
+.energy-unit-empty {
+	background-color: #a9a7a7;
+}
+
+.comrade-image-block {
+	width: 100%;
+	height: 80%;
+	display: flex;
+}
+
+#hide-widget {
+	width: 5vw;
+	height: 4.5vh;
+	border-radius: 4px;
+ 	top: 94vh;
+ 	right: 13vw;
+	background-color: #2a2b2e;
+	text-align: center;
+}
+
+#hide-widget-text {
+	display: inline-block;
+	color: white;
+	margin: 1vh 0 0;
+  padding: 0;
+}
+
+#hide-widget:hover {
+	cursor: pointer;
+	background-color: #71737b;
+}
+
+#menu-widget {
+	width: 6vw;
+	height: 6vw;
+	top: 88vh;
+	right: 1vw;
+	border-radius: 50%;
+	background-color: #2a2b2e;
+}
+
+#menu-widget:hover {
+	cursor: pointer;
+	background-color: #71737b;
+}
+
+#menu-widget-text {
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 4vh 0;
+}
+
+.widget {
+	position: absolute;
+	z-index: 12;
+}
+
+#menu-widget-text {
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 4vh 0;
+}
+
+
+#achievements-widget {
+	width: 3vw;
+	height: 3vw;
+	top: 93.5vh;
+  right: 8.5vw;
+	border-radius: 50%;
+	background-color: green;
+}
+
+#achievements-widget:hover {
+	cursor: pointer;
+	background-color: #297129;
+}
+
+#achievements-widget-text {
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 1.5vh 0;
+}
+
+#achievements-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+	background-color: wheat;
+}
+
+#achievements-modal-container {
+	width: 100%;
+	height: 100%;
+}
+
+#extra-widget {
+	width: 3vw;
+	height: 3vw;
+	top: 79.8vh;
+	right: 1.1vw;
+	border-radius: 50%;
+	background-color: green;
+}
+
+#extra-widget:hover {
+	cursor: pointer;
+	background-color: #297129;
+}
+
+#extra-widget-text {
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 1.5vh 0;
+}
+
+.extra-widget-active {
+	background-color: #297129!important;
+}
+
+
+.additional-widget {
+	display: none;
+	width: 3vw;
+	height: 3vw;
+	border-radius: 50%;
+	background-color: green;
+}
+
+.additional-widget:hover {
+	cursor: pointer;
+	background-color: #297129;
+}
+
+.additional-widget-text {
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 1.5vh 0;
+}
+
+#shop-widget {
+	top: 72.5vh;
+	right: 1.1vw;
+}
+
+#gatcha-widget {
+	top: 74vh;
+  right: 6.5vw;
+}
+
+#inventory-widget {
+	top: 80vh;
+	right: 10.5vw;
+}
+
+#shop-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+	background-color: wheat;
+}
+
+#gatcha-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+	background-color: wheat;
+}
+
+#inventory-modal {
+	top:15vh;
+	left: 30vw;
+	width:40vw;
+	height:70vh;
+	background-color: wheat;
+}
+
+#level1 {
+	display: none;
+}
+
+.start-stage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/start1.png);
+	background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stage {
+	display: none;
+}
+
+.start-stage-title {
+	position: absolute;
+    left: 45vw;
+	top: 40vh;
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.stage-next {
+	position: absolute;
+	right: 6vw;
+	bottom: 8vh;
+	text-align: right;
+	color: white;
+	text-transform: uppercase;
+}
+
+.stage-next:hover {
+	cursor: pointer;
+	color: #f99bef;
+}
+
+.shift-stage {
+	background-color: purple;
+}
+
+.shift-modal {
+	top: 15vh;
+    left: 5vw;
+    width: 90vw;
+    height: 60vh;
+	position: absolute;
+}
+
+.all-team-list {
+	width: 90%;
+	height: 30%;
+	list-style: none;
+	display: flex;
+	margin: auto;
+	padding: 0;
+}
+
+.choosed-team-list{
+	width: 90%;
+	height: 30%;
+	list-style: none;
+	display: flex;
+	margin: auto;
+	padding: 0;
+}
+
+.choose-comrad-field {
+
+}
+
+/* .shift-comrade-field {
+	width: 10%;
+    margin-right: 10px;
+    height: 90%;
+    background-color: black;
+    cursor: pointer;
+    opacity: 0.2;
+    background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+.shift-item {
+	width: 10%;
+	height: 100%;
+	text-align: center;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.choosed-comrade-field {
+	width: 10%;
+	height: 100%;
+	text-align: center;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.comrade-exist {
+	width: 100%;
+	height: 100%;
+	background-color: #99dede;
+}
+
+.comrade-absent {
+	background-color: #cccccc;
+    background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.choosed-shift-title {
+	margin-top: 20px;
+}
+
+.choosed-comrade-field>.comrade-absent {
+	display: block;
+}
+
+.comrade-busy {
+	opacity: 0.2;
+}
+
+.disabled {
+	cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.disabled:hover {
+	cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.mission-slot-disabled {
+	background-image: url(../img/lock.png);
+	cursor: not-allowed;
+}
+
+.mission-slot-required {
+	border: 5px solid red;
+}
+
+.comrade-extra-effect {
+    height: 100%;
+    width: 90%;
+	background-color: #00000075;
+	margin-top: -100%;
+	color: red;
+}
